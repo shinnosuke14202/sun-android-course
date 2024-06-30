@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suncourse.activities_and_intents.E1MainActivity
 import com.example.suncourse.databinding.ActivityMainBinding
+import com.example.suncourse.fragments.FragmentE3Activity
 import com.example.suncourse.implicit_intents.IntentActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW2.setOnClickListener {
                 val intent = Intent(this@MainActivity, IntentActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW3.setOnClickListener {
+                val intent = Intent(this@MainActivity, FragmentE3Activity::class.java)
                 startActivity(intent)
             }
         }
