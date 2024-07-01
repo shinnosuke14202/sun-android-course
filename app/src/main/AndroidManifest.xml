@@ -13,6 +13,10 @@
         android:theme="@style/Theme.SunCourse"
         tools:targetApi="31">
         <activity
+            android:name=".drawable_styles_themes.E5Activity"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:exported="false" />
+        <activity
             android:name=".fragment_lifecycle.FragmentE4Activity"
             android:exported="false"
             android:theme="@style/Theme.SunCourse" />
