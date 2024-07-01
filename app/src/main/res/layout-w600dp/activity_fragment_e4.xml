@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/jl"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Justice League (New 52)"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:text="Cùng chứng kiến sự hình thành và phát triển của Justice League – Liên Minh Công Lý! Là tập hợp của các siêu anh hùng vĩ đại nhất thế giới: Superman, Batman, Wonder Woman,… Justice League là phòng tuyến quan trọng trong việc bảo vệ thế giới khỏi các siêu tội phạm, các quái vật từ ngoài vũ trụ hay chiều không gian khác…"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.26"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="1"/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/tvTitle1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Justice League (New 52) #1: Justice League – Part 1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="2"/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/tvTitle2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Justice League (New 52) #2: Justice League – Part 2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="3"/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/tvTitle3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Justice League (New 52) #3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/flFragmentContainer"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvChoose"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose an issue"
+                android:textSize="24sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
