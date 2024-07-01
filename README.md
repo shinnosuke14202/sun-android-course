@@ -12,4 +12,6 @@
 4. Fragments Lifecycle.
 - Người dùng bấm hiển thị thông tin x trong fragment.
 - Hiển thị giao diện ở điện thoại và tablet.
-5. 
+5. Drawable, Styles và themes:
+- Tạo menu và thực hiện chuyển đổi dark/light mode
+- Đếm và lưu điểm số 2 đội
