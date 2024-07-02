@@ -25,3 +25,8 @@
 7. User Navigation 
 - Thêm nút back ở tool bar trong Droid Cafe
 - Navigation giữa các tab sử dụng ViewPager
+8. Recycler View
+- Khởi tạo recycler view chứa danh sách các từ
+- Bấm vào từ sẽ thay đổi từ đó (đánh dấu)
+- Có thể thêm vào recycler view
+9. Internet Connection
