@@ -11,6 +11,8 @@ import com.example.suncourse.fragments.FragmentE3Activity
 import com.example.suncourse.implicit_intents.IntentActivity
 import com.example.suncourse.menus_and_pickers.AlertActivity
 import com.example.suncourse.menus_and_pickers.DroidCafeActivity
+import com.example.suncourse.recycler_view.RecyclerViewActivity
+import com.example.suncourse.recycler_view.RecyclerViewAdapterE8
 import com.example.suncourse.user_navigation.TabNavigationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW7.setOnClickListener {
                 val intent = Intent(this@MainActivity, TabNavigationActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW8.setOnClickListener {
+                val intent = Intent(this@MainActivity, RecyclerViewActivity::class.java)
                 startActivity(intent)
             }
         }

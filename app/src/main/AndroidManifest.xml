@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SunCourse"
         tools:targetApi="31">
         <activity
+            android:name=".recycler_view.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".user_navigation.TabNavigationActivity"
             android:exported="false" />
         <activity
