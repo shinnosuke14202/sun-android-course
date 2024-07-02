@@ -30,7 +30,7 @@
 - Bấm vào từ sẽ thay đổi từ đó (đánh dấu)
 - Có thể thêm vào recycler view
 9. Internet Connection
-- Tạo ứng dụng call api tới https://www.googleapis.com/books/v1/ để trả về thông tin các sách tương ứng
+- Tạo ứng dụng call api tới [Google Books](https://developers.google.com/books/docs/overview) để trả về thông tin sách tương ứng
+- Xử lý dữ liệu để hiển thị trên màn hình:
     - Tác giả sách
     - Tiêu đề sách
-- Xử lý dữ liệu để hiển thị trên màn hình
