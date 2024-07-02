@@ -22,4 +22,6 @@
 - Bài tập 2:
     - Hiển thị Dialog Alert
     - Hiển thị Date Picker và hiển thị date chọn ra màn hình
-7.
+7. User Navigation 
+- Thêm nút back ở tool bar trong Droid Cafe
+- Navigation giữa các tab sử dụng ViewPager
