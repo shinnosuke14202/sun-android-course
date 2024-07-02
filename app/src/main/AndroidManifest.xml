@@ -13,9 +13,19 @@
         android:theme="@style/Theme.SunCourse"
         tools:targetApi="31">
         <activity
-            android:name=".drawable_styles_themes.E5Activity"
-            android:theme="@style/Theme.Material3.DayNight"
+            android:name=".menus_and_pickers.AlertActivity"
             android:exported="false" />
+        <activity
+            android:name=".menus_and_pickers.DetailDFActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SunCourse" />
+        <activity
+            android:name=".menus_and_pickers.DroidCafeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".drawable_styles_themes.E5Activity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight" />
         <activity
             android:name=".fragment_lifecycle.FragmentE4Activity"
             android:exported="false"

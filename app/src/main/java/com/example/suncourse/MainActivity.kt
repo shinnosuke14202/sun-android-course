@@ -9,6 +9,8 @@ import com.example.suncourse.drawable_styles_themes.E5Activity
 import com.example.suncourse.fragment_lifecycle.FragmentE4Activity
 import com.example.suncourse.fragments.FragmentE3Activity
 import com.example.suncourse.implicit_intents.IntentActivity
+import com.example.suncourse.menus_and_pickers.AlertActivity
+import com.example.suncourse.menus_and_pickers.DroidCafeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +39,14 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW5.setOnClickListener {
                 val intent = Intent(this@MainActivity, E5Activity::class.java)
+                startActivity(intent)
+            }
+            btnHW6.setOnClickListener {
+                val intent = Intent(this@MainActivity, DroidCafeActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW62.setOnClickListener {
+                val intent = Intent(this@MainActivity, AlertActivity::class.java)
                 startActivity(intent)
             }
         }
