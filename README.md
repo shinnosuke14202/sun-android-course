@@ -15,3 +15,11 @@
 5. Drawable, Styles và themes:
 - Tạo menu và thực hiện chuyển đổi dark/light mode
 - Đếm và lưu điểm số 2 đội
+6. Menus và Pickers:
+- Bài tập 1:
+    - Tạo trang Droid Cafe
+    - Tạo trang nhập thông tin khác hàng
+- Bài tập 2:
+    - Hiển thị Dialog Alert
+    - Hiển thị Date Picker và hiển thị date chọn ra màn hình
+7.
