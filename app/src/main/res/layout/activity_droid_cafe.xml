@@ -18,7 +18,12 @@
             android:id="@+id/tbDroidCafe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0E3EC3" />
+            app:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="#0E3EC3" >
+
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:layout_width="wrap_content"

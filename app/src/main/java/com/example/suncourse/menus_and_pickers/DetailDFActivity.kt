@@ -1,6 +1,7 @@
 package com.example.suncourse.menus_and_pickers
 
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -18,6 +19,7 @@ import com.example.suncourse.databinding.ActivityDetailDfactivityBinding
 class DetailDFActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailDfactivityBinding
+    private lateinit var adapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +30,7 @@ class DetailDFActivity : AppCompatActivity() {
         val food = intent.getStringExtra("FOOD")
 
         val customLabels = listOf("Home", "Work", "Other", "Custom")
-        val adapter = ArrayAdapter(
+        adapter = ArrayAdapter(
             this@DetailDFActivity,
             androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,
             customLabels
@@ -39,7 +41,28 @@ class DetailDFActivity : AppCompatActivity() {
             val orderMessage = "You ordered a $food"
             tvOrdered.text = orderMessage
 
+            ivBack.setOnClickListener {
+                finish()
+            }
+
             // radio group
+            selectOption()
+
+            // spinner
+            useSpinner()
+
+        }
+
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.droid_cafe_menu, menu)
+        return true
+    }
+
+    private fun selectOption() {
+        binding.apply {
             rgDetailDF.setOnCheckedChangeListener { _, checkedId ->
                 val option = findViewById<RadioButton>(checkedId)
                 when (option) {
@@ -62,8 +85,11 @@ class DetailDFActivity : AppCompatActivity() {
                     ).show()
                 }
             }
+        }
+    }
 
-            // spinner
+    private fun useSpinner() {
+        binding.apply {
             spLabels.adapter = adapter
             spLabels.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
@@ -86,10 +112,7 @@ class DetailDFActivity : AppCompatActivity() {
                 }
 
             }
-
         }
-
-
     }
 
 }

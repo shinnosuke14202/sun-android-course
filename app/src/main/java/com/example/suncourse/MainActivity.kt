@@ -11,6 +11,7 @@ import com.example.suncourse.fragments.FragmentE3Activity
 import com.example.suncourse.implicit_intents.IntentActivity
 import com.example.suncourse.menus_and_pickers.AlertActivity
 import com.example.suncourse.menus_and_pickers.DroidCafeActivity
+import com.example.suncourse.user_navigation.TabNavigationActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,6 +48,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW62.setOnClickListener {
                 val intent = Intent(this@MainActivity, AlertActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW7.setOnClickListener {
+                val intent = Intent(this@MainActivity, TabNavigationActivity::class.java)
                 startActivity(intent)
             }
         }

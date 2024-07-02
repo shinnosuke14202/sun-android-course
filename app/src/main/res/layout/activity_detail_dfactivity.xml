@@ -6,164 +6,195 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="20dp"
-    android:paddingVertical="10dp"
     tools:context=".menus_and_pickers.DetailDFActivity">
 
-    <TextView
-        android:id="@+id/tvOrdered"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You ordered a donut"
-        android:layout_marginBottom="10dp"
-        android:textSize="16sp"/>
-
-    <LinearLayout
+    <Toolbar
+        android:id="@+id/tbDroidCafe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:background="#0E3EC3" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name:"
-            android:textColor="#7D7E85"
-            android:textSize="16sp"
-            android:layout_marginEnd="10dp"/>
+            android:text="Order Activity"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
 
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:autofillHints="person name"
-            android:inputType="text|textPersonName"
-            android:hint="enter you name" />
-
-    </LinearLayout>
+    </Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address:"
-            android:textColor="#7D7E85"
-            android:textSize="16sp"
-            android:layout_marginEnd="10dp"/>
-
-        <EditText
-            android:id="@+id/etAddress"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:autofillHints="person address"
-            android:inputType="textPostalAddress|textAutoComplete|textMultiLine"
-            android:maxLines="2"
-            android:minLines="1"
-            android:maxLength="50"
-            android:hint="enter you address" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phone:"
-            android:textColor="#7D7E85"
-            android:textSize="16sp"
-            android:layout_marginEnd="10dp"/>
-
-        <EditText
-            android:id="@+id/etPhoneNumber"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:autofillHints="person phone number"
-            android:inputType="phone"/>
-
-        <Spinner
-            android:id="@+id/spLabels"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </Spinner>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Note:"
-            android:textColor="#7D7E85"
-            android:textSize="16sp"
-            android:layout_marginEnd="10dp"/>
-
-        <EditText
-            android:id="@+id/etNote"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:autofillHints="person note"
-            android:inputType="textAutoComplete|textAutoCorrect|textMultiLine"
-            android:maxLines="4"
-            android:minLines="1"
-            android:maxLength="200"
-            android:hint="enter you name" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tvOrdered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose a delivery method:"
-            android:textColor="#7D7E85"
-            android:textSize="18sp"/>
+            android:text="You ordered a donut"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"/>
 
-        <RadioGroup
-            android:id="@+id/rgDetailDF"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
-            <RadioButton
-                android:id="@+id/rbSameDay"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Same day messenger service"/>
+                android:text="Name:"
+                android:textColor="#7D7E85"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
 
-            <RadioButton
-                android:id="@+id/rbNextDay"
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="person name"
+                android:inputType="text|textPersonName"
+                android:hint="enter you name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next day ground delivery"/>
+                android:text="Address:"
+                android:textColor="#7D7E85"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
 
-            <RadioButton
-                android:id="@+id/rbPickUp"
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="person address"
+                android:inputType="textPostalAddress|textAutoComplete|textMultiLine"
+                android:maxLines="2"
+                android:minLines="1"
+                android:maxLength="50"
+                android:hint="enter you address" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick up"/>
+                android:text="Phone:"
+                android:textColor="#7D7E85"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
 
-        </RadioGroup>
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="person phone number"
+                android:inputType="phone"/>
+
+            <Spinner
+                android:id="@+id/spLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="#7D7E85"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="person note"
+                android:inputType="textAutoComplete|textAutoCorrect|textMultiLine"
+                android:maxLines="4"
+                android:minLines="1"
+                android:maxLength="200"
+                android:hint="enter you name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a delivery method:"
+                android:textColor="#7D7E85"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:id="@+id/rgDetailDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbSameDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Same day messenger service"/>
+
+                <RadioButton
+                    android:id="@+id/rbNextDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next day ground delivery"/>
+
+                <RadioButton
+                    android:id="@+id/rbPickUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick up"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
