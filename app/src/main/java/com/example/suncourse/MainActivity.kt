@@ -9,10 +9,10 @@ import com.example.suncourse.drawable_styles_themes.E5Activity
 import com.example.suncourse.fragment_lifecycle.FragmentE4Activity
 import com.example.suncourse.fragments.FragmentE3Activity
 import com.example.suncourse.implicit_intents.IntentActivity
+import com.example.suncourse.internet_connection.InternetConnectionActivity
 import com.example.suncourse.menus_and_pickers.AlertActivity
 import com.example.suncourse.menus_and_pickers.DroidCafeActivity
 import com.example.suncourse.recycler_view.RecyclerViewActivity
-import com.example.suncourse.recycler_view.RecyclerViewAdapterE8
 import com.example.suncourse.user_navigation.TabNavigationActivity
 
 class MainActivity : AppCompatActivity() {
@@ -58,6 +58,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW8.setOnClickListener {
                 val intent = Intent(this@MainActivity, RecyclerViewActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW9.setOnClickListener {
+                val intent = Intent(this@MainActivity, InternetConnectionActivity::class.java)
                 startActivity(intent)
             }
         }
