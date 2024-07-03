@@ -38,3 +38,6 @@
 - Gửi và nhận custom broadcast
 - Nhận system broadcast và hiển thị Toast khi máy được cắm/dừng sạc
 11. Shared Preferences:
+- Tăng số khi bấm count
+- Đổi màu background tương ứng với màu nút bấm
+- Đổi lại số và màu nền khi bấm reset
