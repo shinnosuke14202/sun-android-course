@@ -37,4 +37,4 @@
 10. Broadcasts:
 - Gửi và nhận custom broadcast
 - Nhận system broadcast và hiển thị Toast khi máy được cắm/dừng sạc
-11. Services:
+11. Shared Preferences:
