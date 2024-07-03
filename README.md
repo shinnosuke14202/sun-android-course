@@ -1,6 +1,6 @@
 **BÀI TẬP**
 
-1. Excercise 1: Activities và Intents
+1. Activities và Intents
 - Gửi dữ liệu giữa 2 activities
 2. Implicit intents:
 - Mở url trong edit text.
