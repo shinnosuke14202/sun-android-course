@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SunCourse"
         tools:targetApi="31">
         <activity
+            android:name=".shared_preferences.SharedPreferencesActivity"
+            android:exported="false" />
+        <activity
             android:name=".broadcast.BroadcastActivity"
             android:exported="false" />
         <activity
