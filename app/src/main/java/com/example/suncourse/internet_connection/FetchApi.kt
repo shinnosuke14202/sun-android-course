@@ -25,7 +25,7 @@ object FetchApi {
         val response = StringBuilder()
         val inputStreamReader = InputStreamReader(connection.inputStream)
         val bufferedReader = BufferedReader(inputStreamReader)
-        var line: String? = null
+        var line: String?
         while (bufferedReader.readLine().also { line = it } != null) {
             response.append(line)
         }

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suncourse.activities_and_intents.E1MainActivity
+import com.example.suncourse.broadcast.BroadcastActivity
 import com.example.suncourse.databinding.ActivityMainBinding
 import com.example.suncourse.drawable_styles_themes.E5Activity
 import com.example.suncourse.fragment_lifecycle.FragmentE4Activity
@@ -62,6 +63,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW9.setOnClickListener {
                 val intent = Intent(this@MainActivity, InternetConnectionActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW10.setOnClickListener {
+                val intent = Intent(this@MainActivity, BroadcastActivity::class.java)
                 startActivity(intent)
             }
         }
