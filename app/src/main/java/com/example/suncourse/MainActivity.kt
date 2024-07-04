@@ -14,6 +14,7 @@ import com.example.suncourse.implicit_intents.IntentActivity
 import com.example.suncourse.internet_connection.InternetConnectionActivity
 import com.example.suncourse.menus_and_pickers.AlertActivity
 import com.example.suncourse.menus_and_pickers.DroidCafeActivity
+import com.example.suncourse.notifications.NotificationsActivity
 import com.example.suncourse.recycler_view.RecyclerViewActivity
 import com.example.suncourse.shared_preferences.SharedPreferencesActivity
 import com.example.suncourse.user_navigation.TabNavigationActivity
@@ -77,6 +78,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW12.setOnClickListener {
                 val intent = Intent(this@MainActivity, ContentProviderActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW13.setOnClickListener {
+                val intent = Intent(this@MainActivity, NotificationsActivity::class.java)
                 startActivity(intent)
             }
         }
