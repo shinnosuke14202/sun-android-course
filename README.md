@@ -44,3 +44,9 @@
 12. Content Provider
 - Lấy thông tin từ danh bạ
 - Hiển thị nội dung thông tin: ảnh, tên, sđt lên app
+13. Notifications
+- Tạo 3 nút bấm thực hiện:
+  - Tạo thông báo
+  - Cập nhật thông báo
+  - Xoá thông báo
+- Có thể bấm nút trên thông báo để cập nhập thông báo
