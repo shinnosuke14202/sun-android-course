@@ -2,7 +2,7 @@
 
 1. Activities và Intents
 - Gửi dữ liệu giữa 2 activities
-2. Implicit intents:
+2. Implicit intents
 - Mở url trong edit text.
 - Mở vị trí ở maps theo tên trong et.
 - Share 1 đoạn text tới app khác.
@@ -15,7 +15,7 @@
 5. Drawable, Styles và themes:
 - Tạo menu và thực hiện chuyển đổi dark/light mode
 - Đếm và lưu điểm số 2 đội
-6. Menus và Pickers:
+6. Menus và Pickers
 - Bài tập 1:
     - Tạo trang Droid Cafe
     - Tạo trang nhập thông tin khác hàng
@@ -34,10 +34,13 @@
 - Xử lý dữ liệu để hiển thị trên màn hình:
     - Tác giả sách
     - Tiêu đề sách
-10. Broadcasts:
+10. Broadcasts
 - Gửi và nhận custom broadcast
 - Nhận system broadcast và hiển thị Toast khi máy được cắm/dừng sạc
-11. Shared Preferences:
+11. Shared Preferences
 - Tăng số khi bấm count
 - Đổi màu background tương ứng với màu nút bấm
 - Đổi lại số và màu nền khi bấm reset
+12. Content Provider
+- Lấy thông tin từ danh bạ
+- Hiển thị nội dung thông tin: ảnh, tên, sđt lên app
