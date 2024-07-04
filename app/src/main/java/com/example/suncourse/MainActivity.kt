@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.suncourse.activities_and_intents.E1MainActivity
 import com.example.suncourse.broadcast.BroadcastActivity
+import com.example.suncourse.content_provider.ContentProviderActivity
 import com.example.suncourse.databinding.ActivityMainBinding
 import com.example.suncourse.drawable_styles_themes.E5Activity
 import com.example.suncourse.fragment_lifecycle.FragmentE4Activity
@@ -72,6 +73,10 @@ class MainActivity : AppCompatActivity() {
             }
             btnHW11.setOnClickListener {
                 val intent = Intent(this@MainActivity, SharedPreferencesActivity::class.java)
+                startActivity(intent)
+            }
+            btnHW12.setOnClickListener {
+                val intent = Intent(this@MainActivity, ContentProviderActivity::class.java)
                 startActivity(intent)
             }
         }
